@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/raghuugare
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://raghuugare.github.io
+  * I am raghuugare (https://keybase.io/raghuugare) on keybase.
+  * I have a public key ASBmHaNQfrHFipIAEsPi66nppdb2tkA0sS236vLQ7G5Q9Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120661da3507eb1c58a920012c3e2eba9e9a5d6f6b64034b12db7eaf2d0ec6e50f50a",
+      "host": "keybase.io",
+      "kid": "0120661da3507eb1c58a920012c3e2eba9e9a5d6f6b64034b12db7eaf2d0ec6e50f50a",
+      "uid": "7d24503d7f45f804d3ab251216416519",
+      "username": "raghuugare"
+    },
+    "merkle_root": {
+      "ctime": 1543426550,
+      "hash": "0e797f8adffd06e1dbe1e1ad5ef35599a7473030d8e330d223fb09e60cf675f8f1bb0379e9c62d2af009c89bbe8a653d3ceecdc989c71723c5850178321c29fd",
+      "hash_meta": "f23625d084feb8d80f20b68d66f443faa542f3dc5481cd948e69f3abeae65a7e",
+      "seqno": 4022905
+    },
+    "service": {
+      "entropy": "BrXf0gTMeUtnEJ7XHU+gqTV7",
+      "hostname": "raghuugare.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.10.1"
+  },
+  "ctime": 1543426572,
+  "expire_in": 504576000,
+  "prev": "4739d0bf14c34a9de9811e34c17f5854effcbf8440431ca5bd7eb156686dfadb",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZh2jUH6xxYqSABLD4uup6aXW9rZANLEtt+ry0OxuUPUKp3BheWxvYWTESpcCDMQgRznQvxTDSp3pgR40wX9YVO/8v4RAQxylvX6xVmht+tvEIH/d9c+fo/0fsqZKjP9Y9NwehlfPbtQnXo+XkO9pIdn1AgHCo3NpZ8RAdEZ1gykVHO29UNF51eOnAsn/7UHX31lEbxC3mD9zRFjlmVIBJdwGeDagwm01+WgP+oAVnNCrVzf8AtdWkyCxCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFqON8ANx8/Vqx5zbk8YM1huFUU2miwlx7iXwcitI85do3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/raghuugare
+
+==================================================================
