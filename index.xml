@@ -23,5 +23,31 @@ A simple program in C:
  </description>
     </item>
     
+    <item>
+      <title>Hello World!</title>
+      <link>https://raghuugare.github.io/posts/hello_world/</link>
+      <pubDate>Thu, 25 Dec 2014 12:20:10 +0000</pubDate>
+      
+      <guid>https://raghuugare.github.io/posts/hello_world/</guid>
+      <description>Some Math equations? Here you go!
+Solution of a Quadratic equation of the form: \( ax^{2}+bx +c=0 \)
+\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \]
+Over to some code Here&amp;rsquo;s a sample code snippet in C:
+#include &amp;lt;stdio.h&amp;gt; /* A simple function definition... */ int factorial(int n) { int result = 1; for(int i=1; i&amp;lt;=n; i++) result *= i; return result; } int main() { int n = 5; printf(&amp;quot;Hello World!</description>
+    </item>
+    
+    <item>
+      <title>Welcome! A note from the (b | m)aker...</title>
+      <link>https://raghuugare.github.io/posts/welcome/</link>
+      <pubDate>Fri, 12 Dec 2014 21:00:10 +0000</pubDate>
+      
+      <guid>https://raghuugare.github.io/posts/welcome/</guid>
+      <description>Hi dear Friend! :simple_smile:
+This is a footnote.1
+Welcome to my little site, where I would like to discuss and &amp;lsquo;share&amp;rsquo; little nuggets of beauty or lessons that I learned about and/or &amp;lsquo;experienced&amp;rsquo; during my on-going journey to know more about the Art &amp;amp; Science of Programming in particular.
+Occasionally, it might contain my ramblings on some other topics too.
+Why call this &amp;ldquo;biscuits in tea&amp;rdquo; (b.i.t.) ? A &amp;ldquo;bit&amp;rdquo;&amp;mdash;pun intended&amp;mdash;of explanation about the name is in order.</description>
+    </item>
+    
   </channel>
 </rss>

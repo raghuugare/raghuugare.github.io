@@ -10,5 +10,23 @@
 	<atom:link href="https://raghuugare.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>General</title>
+      <link>https://raghuugare.github.io/categories/general/</link>
+      <pubDate>Fri, 12 Dec 2014 21:00:10 +0000</pubDate>
+      
+      <guid>https://raghuugare.github.io/categories/general/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://raghuugare.github.io/categories/programming/</link>
+      <pubDate>Thu, 25 Dec 2014 12:20:10 +0000</pubDate>
+      
+      <guid>https://raghuugare.github.io/categories/programming/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

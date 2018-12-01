@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Biscuits in Tea...!</title>
+    <link>https://raghuugare.github.io/categories/general/</link>
+    <description>Recent content in General on Biscuits in Tea...!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Dec 2014 21:00:10 +0000</lastBuildDate>
+    
+	<atom:link href="https://raghuugare.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Welcome! A note from the (b | m)aker...</title>
+      <link>https://raghuugare.github.io/posts/welcome/</link>
+      <pubDate>Fri, 12 Dec 2014 21:00:10 +0000</pubDate>
+      
+      <guid>https://raghuugare.github.io/posts/welcome/</guid>
+      <description>Hi dear Friend! :simple_smile:
+This is a footnote.1
+Welcome to my little site, where I would like to discuss and &amp;lsquo;share&amp;rsquo; little nuggets of beauty or lessons that I learned about and/or &amp;lsquo;experienced&amp;rsquo; during my on-going journey to know more about the Art &amp;amp; Science of Programming in particular.
+Occasionally, it might contain my ramblings on some other topics too.
+Why call this &amp;ldquo;biscuits in tea&amp;rdquo; (b.i.t.) ? A &amp;ldquo;bit&amp;rdquo;&amp;mdash;pun intended&amp;mdash;of explanation about the name is in order.</description>
+    </item>
+    
+  </channel>
+</rss>
