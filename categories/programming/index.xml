@@ -6,22 +6,21 @@
     <description>Recent content in Programming on Biscuits in Tea...!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Dec 2014 12:20:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2015 12:21:21 +0000</lastBuildDate>
     
 	<atom:link href="https://raghuugare.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello World!</title>
-      <link>https://raghuugare.github.io/posts/hello_world/</link>
-      <pubDate>Thu, 25 Dec 2014 12:20:10 +0000</pubDate>
+      <title>A small point about &#39;Fixed Point&#39;...</title>
+      <link>https://raghuugare.github.io/post/fixed_point/</link>
+      <pubDate>Thu, 17 Sep 2015 12:21:21 +0000</pubDate>
       
-      <guid>https://raghuugare.github.io/posts/hello_world/</guid>
-      <description>Some Math equations? Here you go!
-Solution of a Quadratic equation of the form: \( ax^{2}+bx +c=0 \)
-\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \]
-Over to some code Here&amp;rsquo;s a sample code snippet in C:
-#include &amp;lt;stdio.h&amp;gt; /* A simple function definition... */ int factorial(int n) { int result = 1; for(int i=1; i&amp;lt;=n; i++) result *= i; return result; } int main() { int n = 5; printf(&amp;quot;Hello World!</description>
+      <guid>https://raghuugare.github.io/post/fixed_point/</guid>
+      <description>Fixed-point ? The fixed-point of a function \(f(x)\) is a value \(x\) such that the equation \(f(x) = x\) is true.
+For example, \(0\) is a fixed-point of the familiar trigonometric function \(sin\), since \(sin(0)=0\).
+Starting with this simple definition, I was shown some amazing piece of programming by Prof. Gerald Jay Sussman in the legendary SICP course (lecture-2A to be specific).
+Inspired by the lecture, I quickly scribbled the following piece of code verbatim in my Scheme environment.</description>
     </item>
     
   </channel>

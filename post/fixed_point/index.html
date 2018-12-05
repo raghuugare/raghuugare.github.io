@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Posts</title>
+        <title>A small point about &#39;Fixed Point&#39;...</title>
         
         <style>
 
@@ -61,9 +61,6 @@
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
  <meta name="generator" content="Hugo 0.51" />
         
-        <link href="https://raghuugare.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Biscuits in Tea...!" />
-        <link href="https://raghuugare.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="Biscuits in Tea...!" />
-        
 
         
         
@@ -93,7 +90,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Posts</a>
+                    <a class="navbar-brand visible-xs" href="#">A small point about &#39;Fixed Point&#39;...</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -142,23 +139,7 @@
 
 <main>
 
-    <h2>Posts</h2>
-
-     <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/post/hello/">Hello, World! :-) </a></h4>
-    <h5>November 25, 2018</h5>
-    
-
-</div>
-  <div class="item">
+    <div class="item">
 
     
     
@@ -172,39 +153,112 @@
     
 
 </div>
-  <div class="item">
 
-    
-    
-    
 
-    
-    
+    <br> <div class="text-justify">
 
-    <h4><a href="/post/genius_of_ramanujan/">The Genius of Ramanujan</a></h4>
-    <h5>September 15, 2015</h5>
-    
+<h2 id="fixed-point">Fixed-point ?</h2>
 
+<p>The <a href="https://en.wikipedia.org/wiki/Fixed_point_(mathematics)" target="_blank">fixed-point of a function</a> \(f(x)\) is a value \(x\) such that the equation \(f(x) = x\) is true.</p>
+
+<p>For example, \(0\) is a fixed-point of the familiar trigonometric function \(sin\), since \(sin(0)=0\).</p>
+
+<p>Starting with this simple definition, I was shown some amazing piece of programming by <a href="https://en.wikipedia.org/wiki/Gerald_Jay_Sussman" target="_blank">Prof. Gerald Jay Sussman</a> in the legendary <a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a> course (<code>lecture-2A</code> to be specific).</p>
+
+<p>Inspired by the lecture, I quickly scribbled the following piece of code <em>verbatim</em> in my <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)" target="_blank">Scheme</a> environment.</p>
+
+<p>And <strong>lo &amp; behold!</strong></p>
+
+<p>The program I wrote JUST WORKED the first time itself!</p>
+
+<p>Truly a testament to great teaching, and also to a great programming language (LISP that is&ndash;Scheme being a clean lit&rsquo;l dialect of it :-) ).</p>
+
+<p>Hat-tip to both! &hearts; :-)</p>
+
+<h2 id="over-to-the-code">Over to the code&hellip;</h2>
+
+<pre><code class="language-scheme">
+;; Fixed point of a function 'f' about a point 'start'...
+;;
+;; Author: Raghu Ugaré
+;; Courtesy: the great teachers of SICP! &lt;3 :)
+;; ------------------------------------------------------
+
+(define (fixed-point f start)
+  ;; t = tolerance, which determines the maximum permissible error in our calculation
+  (define t 0.000001)
+
+  (define (iter old new)
+    (if (close-enough? old new)
+        new
+        (iter new (f new))))
+
+  (define (close-enough? old new)
+    (&lt; (abs (- old new)) t))
+
+  (iter start (f start)))
+
+</code></pre>
+
+<p>And then I tested it with the following calls to my <code>fixed-point</code> function:</p>
+
+<pre><code class="language-scheme">
+;; ================================================
+;; Some tests below for our Fixed-point function...
+;; ================================================
+
+(fixed-point cos 0) ;; Gives 0.7390855263619245
+(fixed-point sin 0) ;; Gives 0
+(fixed-point sin 1) ;; Gives 0.018169909847253
+
+</code></pre>
+
+<h2 id="the-point">The point?</h2>
+
+<p>Well, in the end, especially on seeing the different values in case of the \( sin() \) function, I realized one simple thing&mdash;even the so-called &lsquo;fixed-point&rsquo; of a function &lsquo;changes&rsquo;.</p>
+
+<p>Which reminds me of the saying:</p>
+
+<blockquote>
+<p>&#10077; The ONLY constant in Life, is CHANGE! &#10078;</p>
+</blockquote>
+
+<p>Happy Learning &amp; Exploring with SICP ! :~)</p>
 </div>
-  <div class="item">
-
-    
-    
-    
 
     
     
 
-    <h4><a href="/post/ode_to_lisp/">Ode to LISP &lt;3 ! </a></h4>
-    <h5>December 16, 2014</h5>
     
 
-</div>
- 
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "raghu-ugare-github" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
 
 </main>
-
-
 
         <footer>
 
