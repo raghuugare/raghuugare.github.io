@@ -177,41 +177,19 @@
 
 <h2 id="over-to-the-code">Over to the code&hellip;</h2>
 
-<pre><code class="language-scheme">
-;; Fixed point of a function 'f' about a point 'start'...
-;;
-;; Author: Raghu Ugaré
-;; Courtesy: the great teachers of SICP! &lt;3 :)
-;; ------------------------------------------------------
+<hr />
 
-(define (fixed-point f start)
-  ;; t = tolerance, which determines the maximum permissible error in our calculation
-  (define t 0.000001)
+<script type="application/javascript" src="//gist.github.com/raghuugare/a5a70ee8757a11c0ebb864a73365f129.js"></script>
 
-  (define (iter old new)
-    (if (close-enough? old new)
-        new
-        (iter new (f new))))
-
-  (define (close-enough? old new)
-    (&lt; (abs (- old new)) t))
-
-  (iter start (f start)))
-
-</code></pre>
+<hr />
 
 <p>And then I tested it with the following calls to my <code>fixed-point</code> function:</p>
 
-<pre><code class="language-scheme">
-;; ================================================
-;; Some tests below for our Fixed-point function...
-;; ================================================
+<hr />
 
-(fixed-point cos 0) ;; Gives 0.7390855263619245
-(fixed-point sin 0) ;; Gives 0
-(fixed-point sin 1) ;; Gives 0.018169909847253
+<script type="application/javascript" src="//gist.github.com/raghuugare/92d75b517a8465410e27871102d6b284.js"></script>
 
-</code></pre>
+<hr />
 
 <h2 id="the-point">The point?</h2>
 
