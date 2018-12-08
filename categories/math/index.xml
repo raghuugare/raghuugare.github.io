@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on Biscuits in Tea...!</title>
-    <link>biscuitsintea.com/categories/math/</link>
+    <link>https://raghuugare.github.io/categories/math/</link>
     <description>Recent content in Math on Biscuits in Tea...!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 Sep 2015 12:21:00 +0000</lastBuildDate>
     
-	<atom:link href="biscuitsintea.com/categories/math/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://raghuugare.github.io/categories/math/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Genius of Ramanujan</title>
-      <link>biscuitsintea.com/post/genius_of_ramanujan/</link>
+      <link>https://raghuugare.github.io/post/genius_of_ramanujan/</link>
       <pubDate>Tue, 15 Sep 2015 12:21:00 +0000</pubDate>
       
-      <guid>biscuitsintea.com/post/genius_of_ramanujan/</guid>
+      <guid>https://raghuugare.github.io/post/genius_of_ramanujan/</guid>
       <description>A glimpse of the great Indian mathe-magician’s work&amp;hellip; History has seldom seen a person who was so passionate, unorthodox, as well as gifted in a field, as was Srinivasa Ramanujan, the self-taught Indian genius, who made several startling discoveries in the realm of Mathematics.
 Despite abject poverty and lack of formal training and encouragement, Ramanujan’s love for numbers never waned. And thanks to a chance encounter and ensuing collaboration with G.</description>
     </item>
