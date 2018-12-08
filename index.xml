@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Biscuits in Tea...!</title>
-    <link>https://www.biscuitsintea.com/</link>
+    <link>biscuitsintea.com/</link>
     <description>Recent content on Biscuits in Tea...!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Nov 2018 21:43:18 +0530</lastBuildDate>
     
-	<atom:link href="https://www.biscuitsintea.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="biscuitsintea.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello, World! :-) </title>
-      <link>https://www.biscuitsintea.com/post/hello/</link>
+      <link>biscuitsintea.com/post/hello/</link>
       <pubDate>Sun, 25 Nov 2018 21:43:18 +0530</pubDate>
       
-      <guid>https://www.biscuitsintea.com/post/hello/</guid>
+      <guid>biscuitsintea.com/post/hello/</guid>
       <description> Hello, World! Well, let us begin with a customary program that simply prints a welcome message!
 A simple program in C:
  An equivalent program in C++ is below:
@@ -25,10 +25,10 @@ A simple program in C:
     
     <item>
       <title>A small point about &#39;Fixed Point&#39;...</title>
-      <link>https://www.biscuitsintea.com/post/fixed_point/</link>
+      <link>biscuitsintea.com/post/fixed_point/</link>
       <pubDate>Thu, 17 Sep 2015 12:21:21 +0000</pubDate>
       
-      <guid>https://www.biscuitsintea.com/post/fixed_point/</guid>
+      <guid>biscuitsintea.com/post/fixed_point/</guid>
       <description>Fixed-point ? The fixed-point of a function \(f(x)\) is a value \(x\) such that the equation \(f(x) = x\) is true.
 For example, \(0\) is a fixed-point of the familiar trigonometric function \(sin\), since \(sin(0)=0\).
 Starting with this simple definition, I was shown some amazing piece of programming by Prof. Gerald Jay Sussman in the legendary SICP course (lecture-2A to be specific).
@@ -37,20 +37,20 @@ Inspired by the lecture, I quickly scribbled the following piece of code verbati
     
     <item>
       <title>The Genius of Ramanujan</title>
-      <link>https://www.biscuitsintea.com/post/genius_of_ramanujan/</link>
+      <link>biscuitsintea.com/post/genius_of_ramanujan/</link>
       <pubDate>Tue, 15 Sep 2015 12:21:00 +0000</pubDate>
       
-      <guid>https://www.biscuitsintea.com/post/genius_of_ramanujan/</guid>
+      <guid>biscuitsintea.com/post/genius_of_ramanujan/</guid>
       <description>A glimpse of the great Indian mathe-magician’s work&amp;hellip; History has seldom seen a person who was so passionate, unorthodox, as well as gifted in a field, as was Srinivasa Ramanujan, the self-taught Indian genius, who made several startling discoveries in the realm of Mathematics.
 Despite abject poverty and lack of formal training and encouragement, Ramanujan’s love for numbers never waned. And thanks to a chance encounter and ensuing collaboration with G.</description>
     </item>
     
     <item>
       <title>Ode to LISP &lt;3 ! </title>
-      <link>https://www.biscuitsintea.com/post/ode_to_lisp/</link>
+      <link>biscuitsintea.com/post/ode_to_lisp/</link>
       <pubDate>Tue, 16 Dec 2014 20:32:14 +0000</pubDate>
       
-      <guid>https://www.biscuitsintea.com/post/ode_to_lisp/</guid>
+      <guid>biscuitsintea.com/post/ode_to_lisp/</guid>
       <description>Finally, after a long time, I started my journey into the magical world of LISP&amp;ndash; something I&amp;rsquo;ve pined for long.
 And began learning so many new things that I felt I should record my discoveries somewhere, more like a &amp;lsquo;travelogue&amp;rsquo; (or a monologue? :)).
 Perhaps, someone travelling or planning to take this path will find it useful in someway, someday&amp;hellip;?
@@ -59,10 +59,10 @@ Prerequisites First, I made sure I had the following things sorted out:</descrip
     
     <item>
       <title>About this blog/me</title>
-      <link>https://www.biscuitsintea.com/about/</link>
+      <link>biscuitsintea.com/about/</link>
       <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.biscuitsintea.com/about/</guid>
+      <guid>biscuitsintea.com/about/</guid>
       <description>Hello! Tea, anyone ? &amp;#9786; &amp;mdash;&amp;gt;  Well, well, well!
 This has been brewing in the kettle of my heart/mind since long&amp;hellip;
 And the time has finally come to serve 1 it!
