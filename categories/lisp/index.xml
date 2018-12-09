@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lisp on Biscuits in Tea...!</title>
-    <link>https://www.biscuitsintea.com/categories/lisp/</link>
+    <link>https://raghuugare.github.io/categories/lisp/</link>
     <description>Recent content in Lisp on Biscuits in Tea...!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Dec 2014 20:32:14 +0000</lastBuildDate>
     
-	<atom:link href="https://www.biscuitsintea.com/categories/lisp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://raghuugare.github.io/categories/lisp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ode to LISP &lt;3 ! </title>
-      <link>https://www.biscuitsintea.com/post/ode_to_lisp/</link>
+      <link>https://raghuugare.github.io/post/ode_to_lisp/</link>
       <pubDate>Tue, 16 Dec 2014 20:32:14 +0000</pubDate>
       
-      <guid>https://www.biscuitsintea.com/post/ode_to_lisp/</guid>
+      <guid>https://raghuugare.github.io/post/ode_to_lisp/</guid>
       <description>Finally, after a long time, I started my journey into the magical world of LISP&amp;ndash; something I&amp;rsquo;ve pined for long.
 And began learning so many new things that I felt I should record my discoveries somewhere, more like a &amp;lsquo;travelogue&amp;rsquo; (or a monologue? :)).
 Perhaps, someone travelling or planning to take this path will find it useful in someway, someday&amp;hellip;?

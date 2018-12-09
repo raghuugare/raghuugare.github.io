@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Biscuits in Tea...!</title>
-    <link>https://www.biscuitsintea.com/categories/</link>
+    <link>https://raghuugare.github.io/categories/</link>
     <description>Recent content in Categories on Biscuits in Tea...!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.biscuitsintea.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://raghuugare.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lisp</title>
-      <link>https://www.biscuitsintea.com/categories/lisp/</link>
+      <link>https://raghuugare.github.io/categories/lisp/</link>
       <pubDate>Tue, 16 Dec 2014 20:32:14 +0000</pubDate>
       
-      <guid>https://www.biscuitsintea.com/categories/lisp/</guid>
+      <guid>https://raghuugare.github.io/categories/lisp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Math</title>
-      <link>https://www.biscuitsintea.com/categories/math/</link>
+      <link>https://raghuugare.github.io/categories/math/</link>
       <pubDate>Tue, 15 Sep 2015 12:21:00 +0000</pubDate>
       
-      <guid>https://www.biscuitsintea.com/categories/math/</guid>
+      <guid>https://raghuugare.github.io/categories/math/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>https://www.biscuitsintea.com/categories/programming/</link>
+      <link>https://raghuugare.github.io/categories/programming/</link>
       <pubDate>Thu, 17 Sep 2015 12:21:21 +0000</pubDate>
       
-      <guid>https://www.biscuitsintea.com/categories/programming/</guid>
+      <guid>https://raghuugare.github.io/categories/programming/</guid>
       <description></description>
     </item>
     
