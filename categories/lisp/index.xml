@@ -6,10 +6,22 @@
     <description>Recent content in Lisp on Biscuits in Tea...!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Dec 2014 20:32:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Dec 2014 17:25:10 +0000</lastBuildDate>
     
 	<atom:link href="https://raghuugare.github.io/categories/lisp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LISP : consp or listp ?</title>
+      <link>https://raghuugare.github.io/post/subtle_difference/</link>
+      <pubDate>Fri, 19 Dec 2014 17:25:10 +0000</pubDate>
+      
+      <guid>https://raghuugare.github.io/post/subtle_difference/</guid>
+      <description>I recently began my long-awaited journey(or a pilgrimage to be honest!) towards the wonderful &amp;lsquo;land&amp;rsquo; of LISP. And along the path, I started understanding the so-called predicates.1
+I also began to learn about the predicates that are built-in, such as oddp, evenp, atomp, etc.
+Then, I stumbled across what seemed like 2 different predicates that are &amp;lsquo;equivalent&amp;rsquo;, but which I realized are not exactly so.
+So, I want to discuss briefly about the subtle difference between these 2 predicates viz.</description>
+    </item>
     
     <item>
       <title>Ode to LISP &lt;3 ! </title>

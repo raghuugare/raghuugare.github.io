@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://raghuugare.github.io/post/subtle_difference/</loc>
+    <lastmod>2014-12-19T17:25:10+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://raghuugare.github.io/post/ode_to_lisp/</loc>
     <lastmod>2014-12-16T20:32:14+00:00</lastmod>
   </url>
@@ -35,7 +40,7 @@
   
   <url>
     <loc>https://raghuugare.github.io/categories/lisp/</loc>
-    <lastmod>2014-12-16T20:32:14+00:00</lastmod>
+    <lastmod>2014-12-19T17:25:10+00:00</lastmod>
     <priority>0</priority>
   </url>
   

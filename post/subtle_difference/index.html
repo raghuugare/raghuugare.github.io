@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LISP : consp or listp ?</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Scope One', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #ff0049;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://raghuugare.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scope%20One">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.51" />
+        
+
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58142785-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-58142785-1');
+        </script>
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">LISP : consp or listp ?</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:raghu.ugare@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/raghuugare/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/raghu_ugare/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/rugare/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.stackoverflow.com/users/1103825/fritz"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/subtle_difference/">LISP : consp or listp ?</a></h4>
+    <h5>December 19, 2014</h5>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<p>I recently began my long-awaited journey(or a <em>pilgrimage</em> to be honest!) towards the wonderful &lsquo;land&rsquo; of <a href="http://en.wikipedia.org/wiki/Lisp_%28programming_language%29" target="_blank">LISP</a>. And along the path, I started understanding the so-called <strong>predicates</strong>.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<p>I also began to learn about the predicates that are built-in, such as <code>oddp</code>, <code>evenp</code>, <code>atomp</code>, etc.</p>
+
+<p>Then, I stumbled across what seemed like 2 different predicates that are &lsquo;equivalent&rsquo;, but which I realized are not exactly so.</p>
+
+<p>So, I want to discuss briefly about the subtle difference between these 2 predicates <em>viz.,</em> <code>consp</code> &amp; <code>listp</code> in LISP.</p>
+
+<p>Beginning LISPers are bound to be a bit confused by the existence of the predicates <code>consp</code> &amp; <code>listp</code>. One seems to check if its argument is a <em>cons-cell</em> (Please see the <strong>Notes</strong> section at the bottom for more info or intro to <em>cons-cell</em> ) while the other tells if the argument represents a list. After all, isn&rsquo;t every list a cons-cell? Or so, the thought process goes&hellip;leading one to believe (erroneously!) that these predicates are interchangeable.</p>
+
+<h3 id="isn-t-every-list-a-cons-cell">Isn&rsquo;t every list a cons-cell?</h3>
+
+<p>Seems so, but it is not the case.</p>
+
+<h3 id="so-are-consp-listp-not-the-same">So, are consp &amp; listp <em>not</em> the same?</h3>
+
+<p>Short answer : They are <em>not</em> the same. There&rsquo;s a subtle difference due to one chief exception.</p>
+
+<p>Note that <code>NIL</code> is a list, also denoted by <code>()</code>. But it is  <em>not</em> a cons-cell.</p>
+
+<p><strong>There! I&rsquo;m done!</strong></p>
+
+<p>I hope you &lsquo;got&rsquo; the <em>subtle</em> difference between <code>consp</code> &amp; <code>listp</code> predicates in LISP.</p>
+
+<p>It should now be clear what the following code snippets produce:</p>
+
+<pre><code class="language-common-lisp">
+(consp NIL)
+
+</code></pre>
+
+<p><em>Output:</em>  <code>NIL</code></p>
+
+<p>where as,</p>
+
+<pre><code class="language-common-lisp">
+(listp NIL)
+
+</code></pre>
+
+<p><em>Output:</em> <code>T</code></p>
+
+<hr />
+
+<h2 id="q-a">Q &amp; A</h2>
+
+<hr />
+
+<p><strong>What is a cons-cell?</strong></p>
+
+<p>A <em>cons-cell</em>, in Java-parlance, is like the node struct/class of a linked-list. Like so,</p>
+
+<pre><code class="language-java">class Node&lt;T&gt; {
+    T data;
+    Node next;
+}
+</code></pre>
+
+<p>Note that the <code>data</code> field above is also a pointer/reference to some location in memory, just like <code>next</code> points to the &lsquo;next&rsquo; node of the list. Thus a <em>cons-cell</em> is essentially a pair of pointers used to represent lists in LISP. In a singly-linked-list the last node has <code>next</code> set to <code>null</code>.</p>
+
+<p>LISP uses this cons-cell concept to represent lists. For more information on cons-cells, you can refer to <a href="http://c2.com/cgi/wiki?ConsCell" target="_blank">this introductory article</a>. Enjoy!</p>
+
+<hr />
+
+<p><strong>If a predicate always returns Yes/No or True/False why does the output here show <code>T</code> &amp; <code>NIL</code> ?</strong></p>
+
+<p>Good observation! You will understand this when you learn the basics of LISP.</p>
+
+<ul>
+<li>LISP denotes the boolean value of &ldquo;true&rdquo; by the symbol <code>T</code>, and uses <code>NIL</code> for &ldquo;false&rdquo;. To make it clear, No, LISP does <strong>not</strong> use <code>F</code> for &ldquo;false&rdquo;, as one expect!</li>
+<li>Note that <code>NIL</code> is also used to represent an empty list i.e., <code>()</code>. Thus, the expression <code>(equalp NIL ())</code> evaluates to <code>T</code> (= true)</li>
+</ul>
+
+<hr />
+
+<p><strong>Update</strong>: Thanks to Jean-Philippe Paradis of <a href="https://www.hexstreamsoft.com" target="_blank">HexstreamSoft</a> for pointing out another observation worth sharing&ndash;that <code>NIL</code> sometimes exhibits cons-like behaviour too, in that both <code>(car NIL)</code> and <code>(cdr NIL)</code> return <code>NIL</code> just like it would if you had used <code>(car ())</code> and <code>(cdr ())</code>. Try it out!</p>
+
+<hr />
+
+<h3 id="footnotes">Footnotes</h3>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Predicates (in LISP) are nothing but functions that answer Yes/No type of questions. By convention LISP predicate-names end in the letter <strong>p</strong> (stands for &lsquo;predicate&rsquo;!)
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "raghu-ugare-github" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/calintat/minimal" target="_blank">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
