@@ -9,7 +9,7 @@
         <style>
 
     html body {
-        font-family: 'Fanwood Text', sans-serif;
+        font-family: 'Nunito', sans-serif;
         background-color: white;
     }
 
@@ -27,7 +27,7 @@
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fanwood%20Text">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
 
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.51" />
+ <meta name="generator" content="Hugo 0.74.3" />
         
 
         
@@ -155,42 +155,27 @@
 </div>
 
 
-    <br> <div class="text-justify">
-
-<p>Finally, after a long time, I started my journey into the magical world of <a href="http://en.wikipedia.org/wiki/Lisp_%28programming_language%29" target="_blank">LISP</a>&ndash; something I&rsquo;ve pined for long.</p>
-
+    <br> <div class="text-justify"><p>Finally, after a long time, I started my journey into the magical world of <a href="http://en.wikipedia.org/wiki/Lisp_%28programming_language%29">LISP</a>&ndash; something I&rsquo;ve pined for long.</p>
 <p>And began learning so many new things that I felt I should record my discoveries somewhere, more like a &lsquo;travelogue&rsquo; (or a monologue? :)).</p>
-
 <p>Perhaps, someone travelling or planning to take this path will find it useful in someway, someday&hellip;?</p>
-
 <h2 id="prerequisites">Prerequisites</h2>
-
 <p>First, I made sure I had the following things sorted out:</p>
-
 <ul>
-<li>Choosing a &lsquo;dialect&rsquo; of LISP to learn. <a href="http://en.wikipedia.org/wiki/Common_Lisp" target="_blank">Common LISP</a> &amp; <a href="http://en.wikipedia.org/wiki/Scheme_(programming_language)" target="_blank">Scheme</a> are the 2 most popular &amp; enduring ones out there. I chose Common LISP for now (though I love Scheme too!).</li>
-<li>Install an implementation of ANSI compliant Common LISP. I went with the free, open-source <em>Steel Bank Common LISP (SBCL)</em> which you can obtain <a href="http://www.sbcl.org/" title="A free implementation of ANSI Common LISP" target="_blank">here</a>.</li>
-<li>One of my favourite editors &mdash;<a href="http://www.gnu.org/software/emacs/" title="Emacs - the legendary editor! &lt;3 :)" target="_blank">Emacs</a>&mdash;installed version 24.4 (the latest stable version, as of writing this).</li>
-<li>Lastly, installed the must-have <a href="http://common-lisp.net/project/slime/" title="SLIME mode for Emacs" target="_blank">SLIME</a> mode package in Emacs that allows us to bring up the &lsquo;top-level&rsquo; REPL prompt within Emacs for my LISP experiments!</li>
+<li>Choosing a &lsquo;dialect&rsquo; of LISP to learn. <a href="http://en.wikipedia.org/wiki/Common_Lisp">Common LISP</a> &amp; <a href="http://en.wikipedia.org/wiki/Scheme_(programming_language)">Scheme</a> are the 2 most popular &amp; enduring ones out there. I chose Common LISP for now (though I love Scheme too!).</li>
+<li>Install an implementation of ANSI compliant Common LISP. I went with the free, open-source <em>Steel Bank Common LISP (SBCL)</em> which you can obtain <a href="http://www.sbcl.org/" title="A free implementation of ANSI Common LISP">here</a>.</li>
+<li>One of my favourite editors &mdash;<a href="http://www.gnu.org/software/emacs/" title="Emacs - the legendary editor! &lt;3 :)">Emacs</a>&mdash;installed version 24.4 (the latest stable version, as of writing this).</li>
+<li>Lastly, installed the must-have <a href="http://common-lisp.net/project/slime/" title="SLIME mode for Emacs">SLIME</a> mode package in Emacs that allows us to bring up the &lsquo;top-level&rsquo; REPL prompt within Emacs for my LISP experiments!</li>
 </ul>
-
 <p>And soon, I obtained my first &ldquo;Hello World&rdquo; by typing and &lsquo;evaulating&rsquo; the following function at the REPL prompt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-common-lisp" data-lang="common-lisp">
+(<span style="color:#a6e22e">format</span> <span style="color:#66d9ef">t</span> <span style="color:#e6db74">&#34;Hello World ! :) ~%&#34;</span>)
+<span style="color:#75715e">;; ~% stands for our ubiquitous &#34;\n&#34; (newline) character...</span>
 
-<pre><code class="language-common-lisp">
-(format t &quot;Hello World ! :) ~%&quot;)
-;; ~% stands for our ubiquitous &quot;\n&quot; (newline) character...
-
-</code></pre>
-
-<h4 id="output">Output</h4>
-
+</code></pre></div><h4 id="output">Output</h4>
 <pre><code>Hello World ! :)
 </code></pre>
-
 <h2 id="a-beautiful-minimalist-language">A Beautiful, minimalist language&hellip;</h2>
-
 <p>Among many things, I learnt that LISP is &ndash;</p>
-
 <ul>
 <li>ancient, yet all encompassing in its innovative features</li>
 <li>simple</li>
@@ -198,16 +183,11 @@
 <li>powerful</li>
 <li>self-referential in its use of lists as both <strong>code</strong> as well as <strong>data</strong></li>
 </ul>
-
 <p>LISP pioneered/introduced almost all of the various innovative features of the many popular dynamic programming languages in use today.</p>
-
 <p><strong>Note:</strong> Well, this <em>&lsquo;Hello&rsquo;,</em> is just the tip of the proverbial iceberg or rather the &lsquo;ice-breaker&rsquo; of our conversation about LISP. Sit tight &amp; brace yourself, as we sail along uncharted territories, exploring some truly <em>ingenious</em> ideas of <strong>Functional Programming</strong> in general &amp; <strong>LISP</strong> in particular.</p>
-
 <p>Many more articles to come showcasing the power &amp; elegance of this classic programming language!</p>
-
-<hr />
-
-<p><strong>Note:</strong> Some work in Scheme, working through the legendary <a href="http://mitpress.mit.edu/sicp/" title="The SICP book (full text) -- free, online" target="_blank">SICP</a> is <a href="https://github.com/raghuugare/rags_SICP" title="My work on SICP..." target="_blank">here</a></p>
+<hr>
+<p><strong>Note:</strong> Some work in Scheme, working through the legendary <a href="http://mitpress.mit.edu/sicp/" title="The SICP book (full text) -- free, online">SICP</a> is <a href="https://github.com/raghuugare/rags_SICP" title="My work on SICP...">here</a></p>
 </div>
 
     
@@ -246,7 +226,7 @@
 
         <footer>
 
-            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/calintat/minimal" target="_blank">Minimal</a></p>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
         </footer>
        

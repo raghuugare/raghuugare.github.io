@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Biscuits in Tea...!</title>
@@ -6,21 +6,22 @@
     <description>Recent content in Categories on Biscuits in Tea...!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 15 Sep 2015 12:21:00 +0000</lastBuildDate>
     
 	<atom:link href="https://raghuugare.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>General Font</title>
-      <link>https://raghuugare.github.io/categories/general-font/</link>
-      <pubDate>Sun, 14 Dec 2014 20:20:10 +0000</pubDate>
+      <title>math</title>
+      <link>https://raghuugare.github.io/categories/math/</link>
+      <pubDate>Tue, 15 Sep 2015 12:21:00 +0000</pubDate>
       
-      <guid>https://raghuugare.github.io/categories/general-font/</guid>
+      <guid>https://raghuugare.github.io/categories/math/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Lisp</title>
+      <title>LISP</title>
       <link>https://raghuugare.github.io/categories/lisp/</link>
       <pubDate>Fri, 19 Dec 2014 17:25:10 +0000</pubDate>
       
@@ -29,11 +30,11 @@
     </item>
     
     <item>
-      <title>Math</title>
-      <link>https://raghuugare.github.io/categories/math/</link>
-      <pubDate>Tue, 15 Sep 2015 12:21:00 +0000</pubDate>
+      <title>general, font</title>
+      <link>https://raghuugare.github.io/categories/general-font/</link>
+      <pubDate>Sun, 14 Dec 2014 20:20:10 +0000</pubDate>
       
-      <guid>https://raghuugare.github.io/categories/math/</guid>
+      <guid>https://raghuugare.github.io/categories/general-font/</guid>
       <description></description>
     </item>
     

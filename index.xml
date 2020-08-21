@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Biscuits in Tea...!</title>
@@ -17,9 +17,9 @@
       <pubDate>Sun, 25 Nov 2018 21:43:18 +0530</pubDate>
       
       <guid>https://raghuugare.github.io/post/hello/</guid>
-      <description> Hello, World! Well, let us begin with a customary program that simply prints a welcome message!
+      <description>Hello, World! Well, let us begin with a customary program that simply prints a welcome message!
 A simple program in C:
- An equivalent program in C++ is below:
+  An equivalent program in C++ is below:
  </description>
     </item>
     
@@ -29,7 +29,7 @@ A simple program in C:
       <pubDate>Tue, 15 Sep 2015 12:21:00 +0000</pubDate>
       
       <guid>https://raghuugare.github.io/post/genius_of_ramanujan/</guid>
-      <description>A glimpse of the great Indian mathe-magician’s work&amp;hellip; History has seldom seen a person who was so passionate, unorthodox, as well as gifted in a field, as was Srinivasa Ramanujan, the self-taught Indian genius, who made several startling discoveries in the realm of Mathematics.
+      <description>A glimpse of the great Indian mathe-magician’s work&amp;hellip; History has seldom seen a person who was so passionate, unorthodox, as well as gifted in a field as was Srinivasa Ramanujan, the self-taught Indian genius, who made several startling discoveries in the realm of Mathematics.
 Despite abject poverty and lack of formal training and encouragement, Ramanujan’s love for numbers never waned. And thanks to a chance encounter and ensuing collaboration with G.</description>
     </item>
     
@@ -63,7 +63,7 @@ Prerequisites First, I made sure I had the following things sorted out:</descrip
       <pubDate>Sun, 14 Dec 2014 20:20:10 +0000</pubDate>
       
       <guid>https://raghuugare.github.io/post/fontification/</guid>
-      <description>My journey to the &amp;ldquo;font&amp;rdquo;ain of Beauty! :) I love fonts to an almost fanatic extent.
+      <description>My journey to the &amp;ldquo;font&amp;quot;ain of Beauty! :) I love fonts to an almost fanatic extent.
 Other than meddling with different typefaces, with Serifs &amp;amp; without (&amp;lsquo;sans&amp;rsquo; 1 Serif), I have been notorious among my friends &amp;amp; peers for my heavy use of colors also to the above mix, giving rise to a &amp;lsquo;psychedelic riot of colors&amp;rsquo; in my blog articles &amp;amp; mails.
 I do all of this&amp;mdash;in my effort to somehow produce &amp;lsquo;intonations &amp;amp; emphasis&amp;rsquo; of speech in written text, using colors, fonts and their weights &amp;amp; styles as my tools.</description>
     </item>
@@ -74,7 +74,7 @@ I do all of this&amp;mdash;in my effort to somehow produce &amp;lsquo;intonation
       <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>https://raghuugare.github.io/about/</guid>
-      <description>Hello! Tea, anyone ? &amp;#9786; &amp;mdash;&amp;gt;  Well, well, well!
+      <description>Hello! Tea, anyone ? ☺ &amp;mdash;&amp;gt;  Well, well, well!
 This has been brewing in the kettle of my heart/mind since long&amp;hellip;
 And the time has finally come to serve 1 it!
 Confession: I am an ardent lover of Tea&amp;mdash;a fact my friends all over the world can vouch for.
