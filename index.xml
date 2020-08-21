@@ -24,6 +24,18 @@ A simple program in C:
     </item>
     
     <item>
+      <title>A small point about Fixed Point...</title>
+      <link>https://raghuugare.github.io/post/fixed_point/</link>
+      <pubDate>Thu, 17 Sep 2015 12:21:21 +0000</pubDate>
+      
+      <guid>https://raghuugare.github.io/post/fixed_point/</guid>
+      <description>Fixed-point ? The fixed-point of a function \(f(x)\) is a value \(x\) such that the equation \(f(x) = x\) is true.
+For example, \(0\) is a fixed-point of the familiar trigonometric function \(sin\), since \(sin(0)=0\).
+Starting with this simple definition, I was shown some amazing piece of programming by Prof. Gerald Jay Sussman in the legendary SICP course (lecture-2A to be specific).
+Inspired by the lecture, I quickly scribbled the following piece of code verbatim in my Scheme environment.</description>
+    </item>
+    
+    <item>
       <title>The Genius of Ramanujan</title>
       <link>https://raghuugare.github.io/post/genius_of_ramanujan/</link>
       <pubDate>Tue, 15 Sep 2015 12:21:00 +0000</pubDate>

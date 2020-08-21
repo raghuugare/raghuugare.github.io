@@ -9,7 +9,7 @@
         <style>
 
     html body {
-        font-family: 'Scope One', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
         background-color: white;
     }
 
@@ -27,7 +27,7 @@
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scope%20One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira%20Sans">
 
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
@@ -42,7 +42,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script> 
 
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.51" />
+ <meta name="generator" content="Hugo 0.74.3" />
         
 
         
@@ -155,52 +155,31 @@
 </div>
 
 
-    <br> <div class="text-justify">
-
-<h3 id="fixed-point">Fixed-point ?</h3>
-
-<p>The <a href="https://en.wikipedia.org/wiki/Fixed_point_(mathematics)" target="_blank">fixed-point of a function</a> \(f(x)\) is a value \(x\) such that the equation \(f(x) = x\) is true.</p>
-
+    <br> <div class="text-justify"><h3 id="fixed-point-">Fixed-point ?</h3>
+<p>The <a href="https://en.wikipedia.org/wiki/Fixed_point_(mathematics)">fixed-point of a function</a> \(f(x)\) is a value \(x\) such that the equation \(f(x) = x\) is true.</p>
 <p>For example, \(0\) is a fixed-point of the familiar trigonometric function \(sin\), since \(sin(0)=0\).</p>
-
-<p>Starting with this simple definition, I was shown some amazing piece of programming by <a href="https://en.wikipedia.org/wiki/Gerald_Jay_Sussman" target="_blank">Prof. Gerald Jay Sussman</a> in the legendary <a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a> course (<code>lecture-2A</code> to be specific).</p>
-
-<p>Inspired by the lecture, I quickly scribbled the following piece of code <em>verbatim</em> in my <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)" target="_blank">Scheme</a> environment.</p>
-
+<p>Starting with this simple definition, I was shown some amazing piece of programming by <a href="https://en.wikipedia.org/wiki/Gerald_Jay_Sussman">Prof. Gerald Jay Sussman</a> in the legendary <a href="https://mitpress.mit.edu/sicp/">SICP</a> course (<code>lecture-2A</code> to be specific).</p>
+<p>Inspired by the lecture, I quickly scribbled the following piece of code <em>verbatim</em> in my <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)">Scheme</a> environment.</p>
 <p>And <strong>lo &amp; behold!</strong></p>
-
 <p>The program I wrote JUST WORKED the first time itself!</p>
-
 <p>Truly a testament to great teaching, and also to a great programming language (LISP that is&ndash;Scheme being a clean lit&rsquo;l dialect of it :-) ).</p>
-
 <p>Hat-tip to both! ♥️ 😊</p>
-
 <h3 id="over-to-the-code">Over to the code&hellip;</h3>
+<hr>
+<script type="application/javascript" src="https://gist.github.com/raghuugare/a5a70ee8757a11c0ebb864a73365f129.js"></script>
 
-<hr />
-
-<script type="application/javascript" src="//gist.github.com/raghuugare/a5a70ee8757a11c0ebb864a73365f129.js"></script>
-
-<hr />
-
+<hr>
 <p>And then I tested it with the following calls to my <code>fixed-point</code> function:</p>
+<hr>
+<script type="application/javascript" src="https://gist.github.com/raghuugare/92d75b517a8465410e27871102d6b284.js"></script>
 
-<hr />
-
-<script type="application/javascript" src="//gist.github.com/raghuugare/92d75b517a8465410e27871102d6b284.js"></script>
-
-<hr />
-
+<hr>
 <h3 id="the-point">The point?</h3>
-
 <p>Well, in the end, especially on seeing the different values in case of the \( sin() \) function, I realized one simple thing&mdash;even the so-called &lsquo;fixed-point&rsquo; of a function &lsquo;changes&rsquo;.</p>
-
 <p>Which reminds me of the saying:</p>
-
 <blockquote>
-<p>&#10077; The ONLY constant in Life, is CHANGE! &#10078; 😊</p>
+<p>❝ The ONLY constant in Life, is CHANGE! ❞ 😊</p>
 </blockquote>
-
 <p><strong>Happy Learning &amp; Exploring with SICP ! :~)</strong></p>
 </div>
 
@@ -240,7 +219,7 @@
 
         <footer>
 
-            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/calintat/minimal" target="_blank">Minimal</a></p>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
         </footer>
        
